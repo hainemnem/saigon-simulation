@@ -1,4 +1,4 @@
 # saigon-simulation
-Code resportitory of Computer Scienice Bachelor Thesis: Factorizing Agents Affecting The Air Quality: A Scenario of Ho Chi Minh City. The report (disclaimer, referencces...) link are: (availabe soon!)
+Code repository of Computer Science Bachelor Thesis: Factorizing Agents Affecting The Air Quality: A Scenario of Ho Chi Minh City. The report (disclaimer, references...) link are: (available soon!)
 
-It is recommend to use Intellij IDEA text editor for running Java code and Visual Studio Code with Anaconda to run Python Jupyter notebook. 
+For your convenience and to ensure smooth execution, using the IntelliJ IDEA  for Java code and VS Code with Anaconda for a Python Jupyter Notebook are recommended.
