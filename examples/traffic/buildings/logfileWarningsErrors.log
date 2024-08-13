@@ -1,0 +1,21 @@
+2024-05-13T12:53:40,531  WARN VspConfigConsistencyCheckerImpl:89 you are insisting on config v1.  vsp default is using v2.
+2024-05-13T12:53:40,531  WARN VspConfigConsistencyCheckerImpl:404 you are not using SpeedyALT as routing algorithm.  vsp default (since may'21) is to use SpeedeALT.
+2024-05-13T12:53:40,531  WARN VspConfigConsistencyCheckerImpl:190 You are not setting fractionOfIterationsToStartScoreMSA; vsp default is to set this to something like 0.8.  This means you have to add the following lines to your config file: 
+2024-05-13T12:53:40,531  WARN VspConfigConsistencyCheckerImpl:192 <module name="planCalcScore">
+2024-05-13T12:53:40,531  WARN VspConfigConsistencyCheckerImpl:193 	<param name="fractionOfIterationsToStartScoreMSA" value="0.8" />
+2024-05-13T12:53:40,533  WARN VspConfigConsistencyCheckerImpl:194 </module>
+2024-05-13T12:53:40,533  WARN VspConfigConsistencyCheckerImpl:212 You are not removing unnecessary plan attributes; vsp default is to do that.
+2024-05-13T12:53:40,533  WARN VspConfigConsistencyCheckerImpl:245 found `PlansCalcRouteConfigGroup.AccessEgressType.none'; vsp should use `accessEgressModeToLink' or some other value or talk to Kai.
+2024-05-13T12:53:40,533  WARN VspConfigConsistencyCheckerImpl:252 found qsim.usePersonIdForMissingVehicleId==true; this is only for backwards compatibility and should rather be set to false
+2024-05-13T12:53:40,533  WARN VspConfigConsistencyCheckerImpl:257 found `qsim.usingTravelTimeCheckInTeleporation==false'; vsp should try out `true' and report.
+2024-05-13T12:53:40,534  WARN VspConfigConsistencyCheckerImpl:270  found 'qsim.trafficDynamics==queue'; vsp standard is`kinematicWaves'.
+2024-05-13T12:53:40,534  WARN VspConfigConsistencyCheckerImpl:300 You have not set fractionOfIterationsToDisableInnovation; vsp default is to set this to 0.8 or similar.  Add the following config lines:
+2024-05-13T12:53:40,534  WARN VspConfigConsistencyCheckerImpl:301 <module name="strategy">
+2024-05-13T12:53:40,534  WARN VspConfigConsistencyCheckerImpl:302 	<param name="fractionOfIterationsToDisableInnovation" value="0.8" />
+2024-05-13T12:53:40,534  WARN VspConfigConsistencyCheckerImpl:303 </module>
+2024-05-13T12:53:40,574  WARN PrepareForSimImpl:229 'usePersonIdForMissingVehicleId' is deprecated. It will be removed soon.
+2024-05-13T12:53:45,424  WARN RandomizingTimeDistanceTravelDisutilityFactory:113 There will be no routing randomness. The randomization of the travel disutility requires the monetary distance rate to be different than zero. Continuing anyway.
+2024-05-13T12:53:45,424  WARN RandomizingTimeDistanceTravelDisutilityFactory:118 There will be no routing randomness. The randomization of the travel disutility requires the travel time cost rate to be different than zero. Continuing anyway.
+2024-05-13T12:54:12,379  WARN ExpBetaPlanChanger:102 Would make sense to revise this once more.  See comments in code.  kai, nov08
+2024-05-13T12:55:00,250  WARN PlansCalcRouteConfigGroup:378 The first mode routing (= teleported mode) params that are explicitly defined clear the default mode routing (= teleported mode) params.  If you want to avoid this 
+2024-05-13T12:55:00,250  WARN PlansCalcRouteConfigGroup:379     warning, use clearTeleportedModeParams(true) in code, and "clearDefaultTeleportedModeParams"=true in xml config.
